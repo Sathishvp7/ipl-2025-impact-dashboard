@@ -1120,7 +1120,7 @@ def main():
     port = int(os.environ.get('PORT', 8050))
     
     print(f"Dashboard will be available at http://127.0.0.1:{port}/")
-    app.run_server(debug=False, host='0.0.0.0', port=port)
+    app.run(debug=False, host='0.0.0.0', port=port)
 
 if __name__ == "__main__":
     main()
